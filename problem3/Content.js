@@ -23,12 +23,22 @@ for (let i = 0; i < headers.length; i++){
 const p = document.getElementsByTagName("p");
 for (let i = 0; i < p.length; i++){
     p[i].innerText = "This website is now about good dogs.";
+for (elt of p) {
+    elt.style['background-color'] = '#0000FF';
 }
+}
+
 
 // changing the headers name to click me, just the clickable link by using class name, so that not every h3 tag will get changed. Only the ones on the home page when u search for something
 const headers2 = document.getElementsByClassName("LC20lb MBeuO DKV0Md");
 for (let i = 0; i < headers2.length; i++){
     headers2[i].innerText = "click me!! ";
 }
+
+document.body.style.transform = 'rotate(180deg)';
+document.body.style.backgroundColor = '#add8e6';
+
+
+
 
 
